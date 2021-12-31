@@ -1,0 +1,81 @@
+header {
+	padding-top: 3ch;
+	background-color: #18191c;
+	padding-bottom: 50vh; /* TEMP */
+}
+
+body {
+	background: linear-gradient(45deg, #2f383f, #3b5e5a);
+	color: #ccc;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #ccc;
+}
+
+h1, a {
+	color: transparent;
+	background: linear-gradient(45deg, #72efb4, #3f74a2);
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+
+a:hover, a:hover h1 {
+	color: #72efb4;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.container {
+	max-width: 120ch;
+	padding: 2ch;
+	margin: auto;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	font-size: 1.15rem;
+}
+
+nav ul li:first-child {
+	flex-grow: 1;
+	font-size: 1.35rem;
+}
+
+nav ul li:first-child a {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	padding: 0;
+}
+
+nav ul li:first-child a img {
+	margin-right: 1rem;
+	transition-property: transform;
+	transition-duration: 100ms;
+	transition-timing-function: ease-out;
+}
+
+nav ul li:first-child a:hover img {
+	transform: rotate(15deg);
+}
+
+nav ul a {
+	padding: 1rem;
+	display: block;
+}
+
+img.logo {
+	height: 3rem;
+	width: 3rem;
+}
+
+img.waves {
+	height: 7vw;
+	min-width: 100%;
+}
