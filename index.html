@@ -16,16 +16,29 @@
 <body>
 	<header class="container">
 		<h1>Declutter your Discord server</h1>
-		<p><span class="branding-color">Needle</span> is a bot that helps you take full advantage of Discord Threads by grouping relevant content <strong>automatically</strong> and <strong>consistently</strong>.</p>
+		<p><span class="branding-color">Needle</span> is a bot that helps you take full advantage of Discord Threads by grouping relevant content <strong>consistently</strong> and <strong>automatically</strong>.</p>
 		<ul class="about">
-			<li>100% free</li>
-			<li>24/7 uptime</li>
-			<li>highly customizeable</li>
-			<li>open source</li>
-			<li>no data collection</li>
+			<div>
+				<li>100% free</li>
+				<li>24/7 uptime</li>
+				<li>open source</li>
+			</div>
+			<div>
+				<li>highly customizeable</li>
+				<li>no data collection</li>
+				<li>runs on renewable energy</li>
+			</div>
 		</ul>
-		<a class="btn cta" href="invite.html">Add to server</a>
-		<a class="btn" href="#features">Learn more</a>
+		<div class="buttons">
+			<a class="btn cta" href="invite.html">
+				<span>Add to server</span>
+				<img src="img/add-outline.svg" alt="" role="presentation" />
+			</a>
+			<a class="btn" href="#features">
+				<span>Learn more</span>
+				<img src="img/information-outline.svg" alt="" role="presentation" />
+			</a>
+		</div>
 	</header>
 
 	<img class="waves" src="img/waves.svg" alt="" role="presentation" draggable="false">
@@ -35,8 +48,10 @@
 			<li>
 				<div class="container">
 					<div class="content">
-						<h3>Automatic thread creation</h3>
-						<p>Easily create <b>ticketing system</b>, <b>discussion boards</b>, or <b>support channels</b> with /configure autothreading &lt;hello&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam expedita optio a rem officiis temporibus iusto impedit quasi quam error.</p>
+						<h3 class="feature auto-thread">Automatic thread creation</h3>
+						<p>Easily create <b>ticketing systems</b>, <b>discussion boards</b>, and <b>support channels</b> tailored to your server. New threads are created for each new message in a given channel.</p>
+						<h4 class="configure">Configuration</h4>
+						<p class="command">/configure autothreading &lt;channel&gt; &lt;enabled&gt;</p>
 					</div>
 					<div class="showcase">
 						<video src="videos/auto-thread.mp4" controls muted autoplay loop></video>
@@ -46,11 +61,13 @@
 			<li>
 				<div class="container">
 					<div class="content">
-						<h3>Automatic thread creation</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima provident vitae, non a doloribus adipisci iure dolorum voluptate placeat mollitia.</p>
+						<h3 class="feature auto-thread">Automatic thread creation</h3>
+						<p>Easily create <b>ticketing systems</b>, <b>discussion boards</b>, and <b>support channels</b> tailored to your server. New threads are created for each new message in a given channel.</p>
+						<h4 class="configure">Configuration</h4>
+						<p class="command">/configure autothreading &lt;channel&gt; &lt;enabled&gt;</p>
 					</div>
 					<div class="showcase">
-						<img src="img/discord.png"/>
+						<video src="videos/auto-thread.mp4" controls muted autoplay loop></video>
 					</div>
 				</div>
 			</li>
