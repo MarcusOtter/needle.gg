@@ -20,7 +20,7 @@ html {
 }
 
 header {
-	padding: 2ch;
+	padding-top: 2ch;
 	margin-bottom: 5rem;
 }
 
@@ -206,7 +206,7 @@ ul.about li:before {
 
 .waves {
 	margin-top: 4rem;
-	transform: rotate(180deg);
+	transform: rotate(180deg) translateY(-2px);
 	height: 4vw;
 	width: 100%;
 	user-select: none;
@@ -359,4 +359,63 @@ ul.about li:before {
 	left: unset;
 	top: -2em;
 	transform: unset;
+}
+
+@media screen and (max-width: 1024px) {
+	#features .container {
+		flex-direction: column !important;
+	}
+
+	#features .content,
+	#features .showcase {
+		width: 80vw;
+		margin: auto;
+	}
+
+	#features h4 {
+		margin-top: 1.5em;
+	}
+
+	#features .showcase {
+		margin-top: 2rem;
+	}
+
+	.feature::before {
+		display: none;
+	}
+
+	#features li:nth-child(even) .feature::before {
+		left: unset;
+		right: 10%;
+		transform: unset;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	header {
+		padding-top: 0;
+		margin-bottom: 1rem;
+	}
+
+	header ul a.btn.sponsor {
+		border: none
+	}
+
+	header ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header ul li {
+		margin-top: 0.5em;
+	}
+
+	header ul li:last-child {
+		margin-left: unset;
+	}
+
+	a.btn img {
+		display: none;
+	}
 }
