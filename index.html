@@ -14,32 +14,37 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="img/logo-16x16.png">
 </head>
 <body>
-	<header class="container">
+	<header>
+		<nav>
+			<ul class="container">
+				<li><a class="btn chat" href="chat.html">Get support</a></li>
+				<li><a class="btn github" href="github.html">GitHub</a></li>
+				<li><a class="btn sponsor" href="sponsor.html">Sponsor</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="container">
 		<h1>Declutter your Discord server</h1>
 		<p><span class="branding-color">Needle</span> is a bot that helps you take full advantage of Discord Threads by grouping relevant content <strong>consistently</strong> and <strong>automatically</strong>.</p>
 		<ul class="about">
-			<div>
-				<li>100% free</li>
-				<li>24/7 uptime</li>
-				<li>open source</li>
-			</div>
-			<div>
-				<li>highly customizeable</li>
-				<li>no data collection</li>
-				<li>runs on renewable energy</li>
-			</div>
+			<li>100% free</li>
+			<li>24/7 uptime</li>
+			<li>open source</li>
+			<li>customizeable</li>
 		</ul>
 		<div class="buttons">
-			<a class="btn cta" href="invite.html">
-				<span>Add to server</span>
-				<img src="img/add-outline.svg" alt="" role="presentation" />
-			</a>
 			<a class="btn" href="#features">
 				<span>Learn more</span>
 				<img src="img/information-outline.svg" alt="" role="presentation" />
 			</a>
+			<a class="btn cta" href="invite.html">
+				<span>Add to server</span>
+				<img src="img/add-outline.svg" alt="" role="presentation" />
+			</a>
 		</div>
-	</header>
+		<a class="top-sponsor" href="https://astro.build" target="_blank">Sponsored by Astro</a>
+	</section>
 
 	<img class="waves" src="img/waves.svg" alt="" role="presentation" draggable="false">
 	<section id="features">
@@ -50,7 +55,7 @@
 					<div class="content">
 						<h3 class="feature auto-thread">Automatic thread creation</h3>
 						<p>Easily create <b>ticketing systems</b>, <b>discussion boards</b>, and <b>support channels</b> tailored to your server. New threads are created for each new message in a given channel.</p>
-						<h4 class="configure">Configuration</h4>
+						<h4 class="cog">Configuration</h4>
 						<p class="command">/configure autothreading &lt;channel&gt; &lt;enabled&gt;</p>
 					</div>
 					<div class="showcase">
@@ -61,24 +66,50 @@
 			<li>
 				<div class="container">
 					<div class="content">
-						<h3 class="feature auto-thread">Automatic thread creation</h3>
-						<p>Easily create <b>ticketing systems</b>, <b>discussion boards</b>, and <b>support channels</b> tailored to your server. New threads are created for each new message in a given channel.</p>
-						<h4 class="configure">Configuration</h4>
-						<p class="command">/configure autothreading &lt;channel&gt; &lt;enabled&gt;</p>
+						<h3 class="feature users">Full control</h3>
+						<p>Thread creators can <b>change title</b> and <b>archive</b> threads without any special permissions. Threads are archived in a way that lets anyone un-archive it in the future by default.</p>
+						<h4 class="code">Commands</h4>
+						<p class="command">/title &lt;new title&gt;</p>
+						<p class="command">/close</p>
 					</div>
 					<div class="showcase">
-						<video src="videos/auto-thread.mp4" controls muted autoplay loop></video>
+						<video src="videos/title-close.mp4" controls muted autoplay loop></video>
 					</div>
 				</div>
 			</li>
 			<li>
 				<div class="container">
 					<div class="content">
-						<h3>Automatic thread creation</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae ratione accusantium aut recusandae sed nesciunt repellendus hic consequuntur? Inventore.</p>
+						<h3 class="feature wrench">Message customization</h3>
+						<p>Most of the <b>output messages are customizeable</b>, so that the bot can fit the theme of your french medieval meme server.</p>
+						<h4 class="cog">Configuration</h4>
+						<p class="command">/configure message &lt;message key&gt; &lt;value&gt;</p>
 					</div>
 					<div class="showcase">
-						<img src="img/discord.png"/>
+						<img src="img/messages.png" alt="" role="presentation" />
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="container">
+					<div class="content">
+						<h3 class="feature question">Useful help command</h3>
+						<p>Forgotten all the commands shown above already? Use the help command to see <b>all the available commands</b> as well as <b>how to use them</b>. The response is only visible to you so that the chat remains tidy.</p>
+						<h4 class="code">Command</h4>
+						<p class="command">/help</p>
+						<p class="command">/help &lt;command&gt;</p>
+					</div>
+					<div class="showcase">
+						<img src="img/help.png" alt="" role="presentation" />
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="container suggest">
+					<div class="content">
+						<h3 class="feature bulb">Missing something?</h3>
+						<a class="btn" href="https://github.com/MarcusOtter/discord-needle/issues/new/choose">Suggest a feature</a>
+						<a class="btn" href="https://github.com/MarcusOtter/discord-needle/issues/new/choose">Open a bug report</a>
 					</div>
 				</div>
 			</li>

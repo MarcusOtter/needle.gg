@@ -1,18 +1,16 @@
 html {
 	scroll-behavior: smooth;
-	
-	--text-color: #eee;
 }
 
 ::selection {
-	color: var(--text-color);
+	color: #eee;
 	background-color: #3f74a2;
 }
 
 *:focus {
 	outline-offset: 0.2em;
 	outline: 2px solid #72efb4 !important;
-	border-color: #72efb4 !important;
+	border-color: transparent !important;
 }
 
 .container {
@@ -21,11 +19,59 @@ html {
 	padding: 0 2ch;
 }
 
+header {
+	padding: 2ch;
+	margin-bottom: 5rem;
+}
+
+header ul {
+	display: flex;
+	list-style-type: none;
+}
+
+header ul li:last-child {
+	margin-left: auto;
+}
+
+header ul a.btn {
+	border: none;
+	position: relative;
+	padding-left: 3.25em;
+}
+
+header ul a.btn::before {
+	content: '';
+	width: 1.25em;
+	height: 1.25em;
+	top: 0.95em;
+	left: 1.25em;
+	position: absolute;
+	background-repeat: no-repeat;
+}
+
+header ul a.btn.sponsor {
+	color: hsl(300, 32%, 75%);
+	border: 1px solid;
+}
+
+header ul a.btn.sponsor::before {
+	background-image: url(../img/heart.svg);
+}
+
+header ul a.btn.github::before {
+	background-image: url(../img/github.svg);
+}
+
+header ul a.btn.chat::before {
+	top: 1.076em;
+	background-image: url(../img/discord.svg);
+}
+
 body {
-	padding: 10ch 0 0 0;
+	padding: 0;
 	text-align: center;
 	background: #282f35;
-	color: var(--text-color);
+	color: #eee;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -40,13 +86,40 @@ body {
 	justify-content: center;
 }
 
+.top-sponsor {
+	color: hsl(300, 32%, 75%);
+	display: inline-block;
+	margin-top: 1em;
+	padding: 0.25em 0.5em;	
+	padding-right: 2.25em;
+	position: relative;
+	border-radius: 0.5em;
+	font-weight: 600;
+	text-transform: lowercase;
+	letter-spacing: 0.02em;
+}
+
+a.top-sponsor:hover, a.top-sponsor:focus {
+	color: #eee;
+}
+
+.top-sponsor:before {
+	content: '';
+	width: 1em;
+	height: 1em;
+	top: 0.64em;
+	right: 0.64em;
+	position: absolute;
+	background: url(../img/heart.svg);
+}
+
 a.btn {
 	text-transform: uppercase;
 	display: flex;
 	border-radius: 8px;
-	padding: 1em 1.5rem;
-	border: 1px solid var(--text-color);
-	color: var(--text-color);
+	padding: 0.75em 1.5rem;
+	color: #eee;
+	border: 1px solid;
 	letter-spacing: 0.025em;
 	margin: 0 0.5rem;
 	align-items: flex-end;
@@ -68,7 +141,7 @@ a.btn img {
 	width: 1.35rem;
 	height: 1.35rem;
 	display: inline-block;
-	margin-left: 1rem;
+	margin-left: 0.75em;
 }
 
 a.cta {	
@@ -79,7 +152,7 @@ a.cta {
 
 strong, b {
 	font-weight: 600;
-	color: var(--text-color);
+	color: #eee;
 }
 
 h1 {
@@ -95,12 +168,10 @@ h1 + p {
 }
 
 ul.about {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	text-align: left;
-	flex-wrap: wrap;
-	justify-content: space-between;
 	width: fit-content;
-	padding: 0;
 	list-style-type: none;
 	margin: auto;
 }
@@ -122,34 +193,21 @@ ul.about li:before {
 }
 
 .command {
+	margin-top: 0.3em;
 	font-size: 1rem;
 	font-weight: 600;
-	color: #3f74a2;
-	background-color: #f1ffd4;
+	color: #72efb4;
+	background-color: hsl(213, 15%, 12%);
+	/* background-color: #d5e2bf; */
 	padding: 0.5em 0.75em;
 	border-radius: 0.5em;
 	font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
 }
 
-.configure {
-	position: relative;
-	width: fit-content;
-}
-
-.configure::before {
-	content: '';
-	width: 1em;
-	height: 1em;
-	position: absolute;
-	left: -1.5em;
-	top: 0.095em;
-	background: url(../img/cog.svg)
-}
-
 .waves {
-	margin-top: 2rem;
+	margin-top: 4rem;
 	transform: rotate(180deg);
-	height: 10ch;
+	height: 4vw;
 	width: 100%;
 	user-select: none;
 }
@@ -160,15 +218,34 @@ ul.about li:before {
 
 .feature::before {
 	content: '';
-	width: 1em;
-	height: 1em;
+	width: 10em;
+	height: 10em;
 	position: absolute;
-	left: -1.5em;
-	top: 0.175em;
+	z-index: -1;
+	top: -1em;
+	left: -5em;
+	transform: rotate(10deg);
 }
 
 .feature.auto-thread::before {
 	background: url(../img/conversation.svg);
+}
+
+.feature.users::before {
+	background: url(../img/users.svg);
+}
+
+.feature.question::before {
+	background: url(../img/question.svg);
+}
+
+.feature.bulb::before {
+	background: url(../img/light-bulb.svg);
+}
+
+.feature.wrench::before {
+	background: url(../img/wrench.svg);
+	transform: scaleX(-1) rotate(15deg);
 }
 
 #features {
@@ -187,12 +264,11 @@ ul.about li:before {
 #features ul {
 	text-align: left;
 	margin: auto;
-	padding: 0;
 }
 
 #features .container {
 	max-width: 115ch;
-	padding: 4rem 0;
+	padding: 4rem 2ch;
 	display: flex;
 	justify-content: space-between;
 }
@@ -209,7 +285,27 @@ ul.about li:before {
 }
 
 #features h4 {
-	margin: 3em 0 0.75em 0;
+	margin: 2em 0 0.25em 0;
+	padding-left: 1.5em;
+	position: relative;
+	width: fit-content;
+}
+
+#features h4::before {
+	content: '';
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	left: 0;
+	top: 0.1em;
+}
+ 
+#features h4.cog::before {
+	background: url(../img/cog.svg)
+}
+
+#features h4.code::before {
+	background: url(../img/code.svg)
 }
 
 #features .content {
@@ -221,12 +317,14 @@ ul.about li:before {
 	color: #ddd;
 	font-weight: 300;
 	font-size: 1.15rem;
+	z-index: 1;
 }
 
 #features .showcase {
 	width: 47.5%;
 	border-radius: 1rem;
 	overflow: hidden;
+	height: fit-content;
 }
 
 #features li:nth-child(even) {
@@ -237,6 +335,28 @@ ul.about li:before {
 	flex-direction: row-reverse;
 }
 
-#features li:nth-child(even) .content {
-	text-align: right;
+#features li:nth-child(even) .feature::before {
+	right: -5em;
+	left: unset;
+	transform: rotate(-10deg);
+}
+
+#features .suggest {
+	min-height: 450px;
+	justify-content: center;
+}
+
+#features .suggest a.btn {
+	margin-top: 1em;
+	display: inline-block;
+}
+
+#features .suggest .content {
+	text-align: center;
+}
+
+#features .suggest .feature::before {
+	left: unset;
+	top: -2em;
+	transform: unset;
 }
