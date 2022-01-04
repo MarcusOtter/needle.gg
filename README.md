@@ -1,6 +1,4 @@
 # needle.gg
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8310d753-153c-4999-b7bf-7ec28165d91e/deploy-status)](https://app.netlify.com/sites/needle-bot/deploys)
 
-Bot: https://github.com/MarcusOtter/discord-needle
-
-![Website screenshot](https://user-images.githubusercontent.com/35617441/147900756-6bc9d11c-070d-4ddf-a924-99bb469b99b7.png)
-
+Needle.gg is the official website for the [Discord bot "Needle"](https://github.com/MarcusOtter/discord-needle)
