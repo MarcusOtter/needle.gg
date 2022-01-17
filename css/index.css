@@ -329,6 +329,7 @@ ul.about li:before {
 
 #features li:nth-child(even) {
 	background-color: #23282e;
+	overflow-x: hidden;
 }
 
 #features li:nth-child(even) .container {
