@@ -1,3 +1,7 @@
+# Plausible proxy
+/js/script.js           https://plausible.io/js/plausible.outbound-links.js 200
+/api/event              https://plausible.io/api/event 200
+
 /github            https://github.com/MarcusOtter/discord-needle/
 /invite            https://discord.com/api/oauth2/authorize?client_id=878399831238909952&permissions=309237713920&scope=bot%20applications.commands
 /chat              https://discord.gg/XYTbHUjNmb
