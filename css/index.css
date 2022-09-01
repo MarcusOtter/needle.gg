@@ -21,7 +21,7 @@ html {
 
 header {
 	padding-top: 2ch;
-	margin-bottom: 5rem;
+	margin-bottom: 9rem;
 }
 
 header ul {
@@ -40,7 +40,7 @@ header ul a.btn {
 }
 
 header ul a.btn::before {
-	content: '';
+	content: "";
 	width: 1.25em;
 	height: 1.25em;
 	top: 0.95em;
@@ -72,7 +72,8 @@ body {
 	text-align: center;
 	background: #282f35;
 	color: #eee;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Helvetica, Arial, sans-serif;
 }
 
 .branding-color {
@@ -90,7 +91,7 @@ body {
 	color: hsl(300, 32%, 75%);
 	display: inline-block;
 	margin-top: 1em;
-	padding: 0.25em 0.5em;	
+	padding: 0.25em 0.5em;
 	padding-right: 2.25em;
 	position: relative;
 	border-radius: 0.5em;
@@ -99,12 +100,13 @@ body {
 	letter-spacing: 0.02em;
 }
 
-a.top-sponsor:hover, a.top-sponsor:focus {
+a.top-sponsor:hover,
+a.top-sponsor:focus {
 	color: #eee;
 }
 
 .top-sponsor:before {
-	content: '';
+	content: "";
 	width: 1em;
 	height: 1em;
 	top: 0.64em;
@@ -125,12 +127,14 @@ a.btn {
 	align-items: flex-end;
 }
 
-a.btn:hover, a.btn:focus {
+a.btn:hover,
+a.btn:focus {
 	background-color: #f1ffd411;
 }
 
-a.btn.cta:hover, a.btn.cta:focus {
-	background: linear-gradient(160deg, #f1ffd4 25%, #7be4b3)
+a.btn.cta:hover,
+a.btn.cta:focus {
+	background: linear-gradient(160deg, #f1ffd4 25%, #7be4b3);
 }
 
 a.btn span {
@@ -144,13 +148,14 @@ a.btn img {
 	margin-left: 0.75em;
 }
 
-a.cta {	
+a.cta {
 	color: #222;
 	font-weight: 600;
 	background: #f1ffd4;
 }
 
-strong, b {
+strong,
+b {
 	font-weight: 600;
 	color: #eee;
 }
@@ -169,7 +174,7 @@ h1 + p {
 
 ul.about {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	text-align: left;
 	width: fit-content;
 	list-style-type: none;
@@ -183,7 +188,7 @@ ul.about li {
 }
 
 ul.about li:before {
-	content: '';
+	content: "";
 	width: 1.2em;
 	height: 1.2em;
 	top: 0.26em;
@@ -201,11 +206,14 @@ ul.about li:before {
 	/* background-color: #d5e2bf; */
 	padding: 0.5em 0.75em;
 	border-radius: 0.5em;
-	font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+		"Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+		"Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+		monospace;
 }
 
 .waves {
-	margin-top: 4rem;
+	margin-top: 7rem;
 	transform: rotate(180deg) translateY(-2px);
 	height: 4vw;
 	width: 100%;
@@ -217,7 +225,7 @@ ul.about li:before {
 }
 
 .feature::before {
-	content: '';
+	content: "";
 	width: 10em;
 	height: 10em;
 	position: absolute;
@@ -250,7 +258,7 @@ ul.about li:before {
 
 #features {
 	background-color: #20252b;
-	padding-top: 3rem;
+	padding-top: 5rem;
 }
 
 #features h2 {
@@ -268,7 +276,7 @@ ul.about li:before {
 
 #features .container {
 	max-width: 115ch;
-	padding: 4rem 2ch;
+	padding: 8rem 2ch;
 	display: flex;
 	justify-content: space-between;
 }
@@ -292,20 +300,20 @@ ul.about li:before {
 }
 
 #features h4::before {
-	content: '';
+	content: "";
 	width: 1em;
 	height: 1em;
 	position: absolute;
 	left: 0;
 	top: 0.1em;
 }
- 
+
 #features h4.cog::before {
-	background: url(../img/cog.svg)
+	background: url(../img/cog.svg);
 }
 
 #features h4.code::before {
-	background: url(../img/code.svg)
+	background: url(../img/code.svg);
 }
 
 #features .content {
@@ -367,6 +375,10 @@ ul.about li:before {
 		flex-direction: column !important;
 	}
 
+	ul.about {
+		grid-template-columns: 1fr 1fr;
+	}
+
 	#features .content,
 	#features .showcase {
 		width: 80vw;
@@ -392,7 +404,6 @@ ul.about li:before {
 	}
 }
 
-
 @media screen and (max-width: 600px) {
 	header {
 		padding-top: 0;
@@ -400,7 +411,7 @@ ul.about li:before {
 	}
 
 	header ul a.btn.sponsor {
-		border: none
+		border: none;
 	}
 
 	header ul {
