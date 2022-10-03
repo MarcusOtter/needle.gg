@@ -407,10 +407,8 @@ ul.about li:before {
 .footer-area {
 	padding: 70px 0;
 	background: #282F35;
-	background: -moz-linear-gradient(left,  #282F35 0%, #3E4952 100%);
-	background: -webkit-linear-gradient(left,  #282F35 0%,#3E4952 100%);
 	background: linear-gradient(to right,  #282F35 0%,#3E4952 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2749c4', endColorstr='#6085b2',GradientType=1 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282F35', endColorstr='#3E4952',GradientType=1 );
 	color:#fff;
 	position:relative;
   }
