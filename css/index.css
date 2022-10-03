@@ -544,36 +544,7 @@ ul.about li:before {
 	}
 
 }
-/* @media (min-width: 768px) { 
-	footer{
-		display: flex; 
-	}
-   }
-@media (min-width: 768px) { 
-	footer {
-		justify-content: space-between; 
-	}
-   }
-@media (min-width: 640px) { 
-	.table{
-		gap: 1.5rem; 
-	}
-	hr{
-		margin: auto; 
-	}
-	.footer-end{
-		display: flex; 
-        justify-content: space-between; 
-        align-items: flex-end; 
-	}
-	.footer-end span{
-		align-items: center;
-	}
-	.footer-end div{
-		margin-top: 0; 
-		justify-content: center; 
-	}
-   }  */
+
   @media screen and (min-width: 24.375em) {
   .legal .legal__links {
     margin-left: auto;
