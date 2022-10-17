@@ -72,8 +72,7 @@ body {
 	text-align: center;
 	background: #282f35;
 	color: #eee;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-		Helvetica, Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .branding-color {
@@ -206,10 +205,9 @@ ul.about li:before {
 	/* background-color: #d5e2bf; */
 	padding: 0.5em 0.75em;
 	border-radius: 0.5em;
-	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
-		"Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
-		"Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
-		monospace;
+	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter",
+		"DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New",
+		Courier, monospace;
 }
 
 .waves {
@@ -370,6 +368,37 @@ ul.about li:before {
 	transform: unset;
 }
 
+footer {
+	background-color: hsl(213, 15%, 8%);
+	padding-block: 6rem;
+	text-align: left;
+	font-size: 1.15rem;
+}
+
+footer nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+footer h3 {
+	margin-bottom: 16px;
+}
+
+footer ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+footer a {
+	color: #bbb;
+	padding-bottom: 0.5em;
+	display: inline-block;
+}
+
+footer a:hover {
+	color: #fff;
+}
+
 @media screen and (max-width: 1024px) {
 	#features .container {
 		flex-direction: column !important;
@@ -429,5 +458,15 @@ ul.about li:before {
 
 	a.btn img {
 		display: none;
+	}
+
+	footer nav {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	footer nav section {
+		margin-bottom: 2rem;
+		text-align: center;
 	}
 }
