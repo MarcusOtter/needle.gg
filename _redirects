@@ -3,6 +3,7 @@
 /api/event              https://plausible.io/api/event 200
 
 /github            https://github.com/MarcusOtter/discord-needle/
+/github-web        https://github.com/MarcusOtter/needle.gg
 /invite            https://discord.com/api/oauth2/authorize?client_id=878399831238909952&permissions=309237713920&scope=bot%20applications.commands
 /chat              https://discord.gg/XYTbHUjNmb
 /support           https://discord.gg/XYTbHUjNmb
