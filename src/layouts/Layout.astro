@@ -99,6 +99,7 @@
       a {
         text-decoration: none;
       }
+
       /* Styles */
       html {
         scroll-behavior: smooth;
@@ -111,8 +112,8 @@
 
       *:focus {
         outline-offset: 0.2em;
-        outline: 2px solid #72efb4 !important;
-        border-color: transparent !important;
+        outline: 2px solid #72efb4;
+        border-color: transparent;
       }
 
       .container {
@@ -120,6 +121,7 @@
         margin: auto;
         padding: 0 2ch;
       }
+
       body {
         padding: 0;
         text-align: center;
@@ -128,12 +130,13 @@
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Helvetica, Arial, sans-serif;
       }
+
       .branding-color {
         font-weight: 600;
         color: #7be4b3; /* Slightly desaturated #72efb4 */
       }
 
-      a.btn {
+      .btn {
         text-transform: uppercase;
         display: flex;
         border-radius: 8px;
@@ -145,23 +148,24 @@
         align-items: flex-end;
       }
 
-      a.btn:hover,
-      a.btn:focus {
+      .btn:hover,
+      .btn:focus {
         background-color: #f1ffd411;
       }
-      a.btn span {
+
+      .btn span {
         display: inline-block;
       }
 
-      a.btn img {
+      .btn img {
         width: 1.35rem;
         height: 1.35rem;
         display: inline-block;
         margin-left: 0.75em;
       }
-      @media screen and (max-width: 600px) {
 
-        a.btn img {
+      @media screen and (max-width: 600px) {
+        .btn img {
           display: none;
         }
       }
