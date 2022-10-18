@@ -1,0 +1,282 @@
+---
+
+---
+<Fragment>
+<img class="waves" src="img/waves.svg" alt="" role="presentation" draggable="false">
+	<section id="features">
+		<h2>Features</h2>
+		<ul>
+			<li>
+				<div class="container">
+					<div class="content">
+						<h3 class="feature auto-thread">Create threads automatically</h3>
+						<p>Easily create <b>ticketing systems</b>, <b>discussion boards</b>, and <b>support channels</b> tailored to your server. New threads are created for each new message in a given channel.</p>
+						<h4 class="cog">Configuration</h4>
+						<p class="command">/auto-thread</p>
+					</div>
+					<div class="showcase">
+						<video src="videos/auto-thread.webm" controls muted autoplay loop playsinline></video>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="container">
+					<div class="content">
+						<h3 class="feature users">Full control</h3>
+						<p>Thread creators can <b>change title</b> and <b>archive</b> threads without any special permissions. Threads are archived in a way that lets anyone un-archive it in the future by default.</p>
+						<h4 class="code">Commands</h4>
+						<p class="command">/title &lt;new title&gt;</p>
+						<p class="command">/close</p>
+					</div>
+					<div class="showcase">
+						<video src="videos/title-close.webm" controls muted autoplay loop playsinline></video>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="container">
+					<div class="content">
+						<h3 class="feature wrench">Message customization</h3>
+						<p>The <b>output messages are customizable</b>, so that the bot can fit the theme of your french medieval meme server.</p>
+						<h4 class="cog">Configuration</h4>
+						<p class="command">/setting</p>
+					</div>
+					<div class="showcase">
+						<img src="img/messages.png" alt="" role="presentation" loading="lazy" />
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="container">
+					<div class="content">
+						<h3 class="feature question">Help and support</h3>
+						<p>Forgotten all the commands shown above already? Use the help command to see <b>all the available commands</b> as well as <b>how to use them</b>. If you still have questions you are more than welcome to join the support server!</p>
+						<h4 class="code">Commands</h4>
+						<p class="command">/help</p>
+					</div>
+					<div class="showcase">
+						<img src="img/help.png" alt="" role="presentation" loading="lazy" />
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="container suggest">
+					<div class="content">
+						<h3 class="feature bulb">Missing something?</h3>
+						<a class="btn" href="/suggest" data-analytics='"Suggest"'>Suggest an improvement</a>
+						<a class="btn" href="/suggest" data-analytics='"Suggest"'>Open a bug report</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+</Fragment>
+
+<style>
+    strong,
+    b {
+        font-weight: 600;
+        color: #eee;
+    }
+
+    .command {
+        margin-top: 0.3em;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #72efb4;
+        background-color: hsl(213, 15%, 12%);
+        /* background-color: #d5e2bf; */
+        padding: 0.5em 0.75em;
+        border-radius: 0.5em;
+        font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter",
+            "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New",
+            Courier, monospace;
+    }
+
+    .waves {
+        margin-top: 7rem;
+        transform: rotate(180deg) translateY(-2px);
+        height: 4vw;
+        width: 100%;
+        user-select: none;
+    }
+
+    .feature {
+        position: relative;
+    }
+
+    .feature::before {
+        content: "";
+        width: 10em;
+        height: 10em;
+        position: absolute;
+        z-index: -1;
+        top: -1em;
+        left: -5em;
+        transform: rotate(10deg);
+    }
+
+    .feature.auto-thread::before {
+        background: url(img/conversation.svg);
+    }
+
+    .feature.users::before {
+        background: url(img/users.svg);
+    }
+
+    .feature.question::before {
+        background: url(img/question.svg);
+    }
+
+    .feature.bulb::before {
+        background: url(img/light-bulb.svg);
+    }
+
+    .feature.wrench::before {
+        background: url(img/wrench.svg);
+        transform: scaleX(-1) rotate(15deg);
+    }
+
+    #features {
+        background-color: #20252b;
+        padding-top: 5rem;
+    }
+
+    #features h2 {
+        font-size: 1.75rem;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #72efb4;
+    }
+
+    #features ul {
+        text-align: left;
+        margin: auto;
+    }
+
+    #features .container {
+        max-width: 115ch;
+        padding: 8rem 2ch;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #features h3 {
+        margin-bottom: 0.5em;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
+    #features h3 img {
+        width: 1.25em;
+        margin-right: 0.5rem;
+    }
+
+    #features h4 {
+        margin: 2em 0 0.25em 0;
+        padding-left: 1.5em;
+        position: relative;
+        width: fit-content;
+    }
+
+    #features h4::before {
+        content: "";
+        width: 1em;
+        height: 1em;
+        position: absolute;
+        left: 0;
+        top: 0.1em;
+    }
+
+    #features h4.cog::before {
+        background: url(img/cog.svg);
+    }
+
+    #features h4.code::before {
+        background: url(img/code.svg);
+    }
+
+    #features .content {
+        width: 47.5%;
+        text-align: left;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        color: #ddd;
+        font-weight: 300;
+        font-size: 1.15rem;
+        z-index: 1;
+    }
+
+    #features .showcase {
+        width: 47.5%;
+        border-radius: 1rem;
+        overflow: hidden;
+        height: fit-content;
+    }
+
+    #features li:nth-child(even) {
+        background-color: #23282e;
+        overflow-x: hidden;
+    }
+
+    #features li:nth-child(even) .container {
+        flex-direction: row-reverse;
+    }
+
+    #features li:nth-child(even) .feature::before {
+        right: -5em;
+        left: unset;
+        transform: rotate(-10deg);
+    }
+
+    #features .suggest {
+        min-height: 450px;
+        justify-content: center;
+    }
+
+    #features .suggest a.btn {
+        margin-top: 1em;
+        display: inline-block;
+    }
+
+    #features .suggest .content {
+        text-align: center;
+    }
+
+    #features .suggest .feature::before {
+        left: unset;
+        top: -2em;
+        transform: unset;
+    }
+    @media screen and (max-width: 1024px) {
+        #features .container {
+            flex-direction: column !important;
+        }
+
+        #features .content,
+        #features .showcase {
+            width: 80vw;
+            margin: auto;
+        }
+
+        #features h4 {
+            margin-top: 1.5em;
+        }
+
+        #features .showcase {
+            margin-top: 2rem;
+        }
+
+        .feature::before {
+            display: none;
+        }
+
+        #features li:nth-child(even) .feature::before {
+            left: unset;
+            right: 10%;
+            transform: unset;
+        }
+    }
+</style>
