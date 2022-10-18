@@ -1,9 +1,5 @@
 ---
-export interface Props {
-  title: string;
-}
 
-const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -56,13 +52,9 @@ const { title } = Astro.props;
       content="http://needle.gg/img/og-image.png"
     />
 
-    <!-- <link rel="stylesheet" href="css/index.css" /> -->
-    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
-
     <link rel="icon" type="image/png" sizes="32x32" href="img/logo-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/logo-16x16.png" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
   </head>
   <body>
     <slot />
@@ -107,7 +99,7 @@ const { title } = Astro.props;
       a {
         text-decoration: none;
       }
-
+      /* Styles */
       html {
         scroll-behavior: smooth;
       }
@@ -169,10 +161,10 @@ const { title } = Astro.props;
       }
       @media screen and (max-width: 600px) {
 
-      a.btn img {
-        display: none;
+        a.btn img {
+          display: none;
+        }
       }
-    }
     </style>
   </body>
 </html>
