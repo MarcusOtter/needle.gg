@@ -1,0 +1,95 @@
+---
+
+---
+
+<header>
+  <nav>
+    <ul class="container">
+      <li>
+        <a class="btn chat" href="/chat" data-analytics='"Discord"'
+          >Get support</a>
+      </li>
+      <li>
+        <a class="btn github" href="/github" data-analytics='"GitHub"'
+          >GitHub</a>
+      </li>
+      <li>
+        <a class="btn sponsor" href="/sponsor" data-analytics='"Sponsor"'
+          >Sponsor</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    padding-top: 2ch;
+    margin-bottom: 9rem;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  li:last-child {
+    margin-left: auto;
+  }
+
+  .btn {
+    border: none;
+    position: relative;
+    padding-left: 3.25em;
+  }
+
+  .btn::before {
+    content: "";
+    width: 1.25em;
+    height: 1.25em;
+    top: 0.95em;
+    left: 1.25em;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  .sponsor {
+    color: hsl(300, 32%, 75%);
+    border: 1px solid;
+  }
+
+  .sponsor::before {
+    background-image: url(/img/heart.svg);
+  }
+
+  .github::before {
+    background-image: url(/img/github.svg);
+  }
+
+  .chat::before {
+    top: 1.076em;
+    background-image: url(/img/discord.svg);
+  }
+  @media screen and (max-width: 600px) {
+    header {
+      padding-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .sponsor {
+      border: none;
+    }
+
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    li {
+      margin-top: 0.5em;
+    }
+
+    li:last-child {
+      margin-left: unset;
+    }
+  }
+</style>

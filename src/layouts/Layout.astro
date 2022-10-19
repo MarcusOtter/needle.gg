@@ -1,0 +1,174 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Needle - Create Discord Threads Automatically</title>
+
+    <meta name="author" content="Marcus Otterström" />
+    <meta
+      name="description"
+      content="Needle is a Discord bot that creates Discord threads automatically."
+    />
+    <meta
+      name="keywords"
+      content="Discord bot,Discord,Threads,Needle,Autothreader,Autothread,Ticketing system"
+    />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Google -->
+    <meta itemprop="name" content="Needle Discord Bot" />
+    <meta
+      itemprop="description"
+      content="Needle is a Discord bot that creates Discord threads automatically."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Needle Discord Bot" />
+    <meta
+      property="og:description"
+      content="Needle is a Discord bot that creates Discord threads automatically."
+    />
+    <meta property="og:image" content="http://needle.gg/img/og-image.png" />
+    <meta property="og:url" content="https://needle.gg" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://needle.gg/" />
+    <meta property="twitter:title" content="Needle Discord Bot" />
+    <meta
+      property="twitter:description"
+      content="Needle is a Discord bot that creates Discord threads automatically."
+    />
+    <meta
+      property="twitter:image"
+      content="http://needle.gg/img/og-image.png"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo-16x16.png" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <slot />
+    <style is:global>
+      /*
+        Josh's Custom CSS Reset, slightly modified
+        https://www.joshwcomeau.com/css/custom-css-reset/
+      */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      html, body {
+        height: 100%;
+      }
+
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      img, picture, video, canvas, svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      input, button, textarea, select {
+        font: inherit;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        line-height: 1.1;
+        overflow-wrap: break-word;
+        letter-spacing: -0.02em;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* Styles */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      ::selection {
+        color: #eee;
+        background-color: #3f74a2;
+      }
+
+      *:focus {
+        outline-offset: 0.2em;
+        outline: 2px solid #72efb4;
+        border-color: transparent;
+      }
+
+      .container {
+        max-width: 100ch;
+        margin: auto;
+        padding: 0 2ch;
+      }
+
+      body {
+        padding: 0;
+        text-align: center;
+        background: #282f35;
+        color: #eee;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+      }
+
+      .branding-color {
+        font-weight: 600;
+        color: #7be4b3; /* Slightly desaturated #72efb4 */
+      }
+
+      .btn {
+        text-transform: uppercase;
+        display: flex;
+        border-radius: 8px;
+        padding: 0.75em 1.5rem;
+        color: #eee;
+        border: 1px solid;
+        letter-spacing: 0.025em;
+        margin: 0 0.5rem;
+        align-items: flex-end;
+      }
+
+      .btn:hover,
+      .btn:focus {
+        background-color: #f1ffd411;
+      }
+
+      .btn span {
+        display: inline-block;
+      }
+
+      .btn img {
+        width: 1.35rem;
+        height: 1.35rem;
+        display: inline-block;
+        margin-left: 0.75em;
+      }
+
+      @media screen and (max-width: 600px) {
+        .btn img {
+          display: none;
+        }
+      }
+    </style>
+  </body>
+</html>
