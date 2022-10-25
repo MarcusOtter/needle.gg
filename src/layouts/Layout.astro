@@ -177,8 +177,8 @@
 		<script is:inline>
 			let analyticsLinks = document.querySelectorAll("a[data-analytics]");
 			for (let i = 0; i < analyticsLinks.length; i++) {
-				links[i].addEventListener("click", handleLinkEvent);
-				links[i].addEventListener("auxclick", handleLinkEvent);
+				analyticsLinks[i].addEventListener("click", handleLinkEvent);
+				analyticsLinks[i].addEventListener("auxclick", handleLinkEvent);
 			}
 
 			function handleLinkEvent(event) {
