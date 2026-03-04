@@ -36,15 +36,6 @@
 		/>
 		<meta property="twitter:image" content="http://needle.gg/img/og-image.png" />
 
-		<script defer data-domain="needle.gg" src="/js/script.js"></script>
-		<script is:inline>
-			window.plausible =
-				window.plausible ||
-				function () {
-					(window.plausible.q = window.plausible.q || []).push(arguments);
-				};
-		</script>
-
 		<link rel="icon" type="image/png" sizes="32x32" href="img/logo-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="img/logo-16x16.png" />
 		<meta name="generator" content={Astro.generator} />
@@ -174,37 +165,5 @@
 				}
 			}
 		</style>
-		<script is:inline>
-			let analyticsLinks = document.querySelectorAll("a[data-analytics]");
-			for (let i = 0; i < analyticsLinks.length; i++) {
-				analyticsLinks[i].addEventListener("click", handleLinkEvent);
-				analyticsLinks[i].addEventListener("auxclick", handleLinkEvent);
-			}
-
-			function handleLinkEvent(event) {
-				var link = event.target;
-				var middle = event.type == "auxclick" && event.which == 2;
-				var click = event.type == "click";
-				while (
-					link &&
-					(typeof link.tagName == "undefined" || link.tagName.toLowerCase() != "a" || !link.href)
-				) {
-					link = link.parentNode;
-				}
-				if (middle || click) {
-					let attributes = link.getAttribute("data-analytics").split(/,(.+)/);
-					let events = [JSON.parse(attributes[0]), JSON.parse(attributes[1] || "{}")];
-					plausible(...events);
-				}
-				if (!link.target) {
-					if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
-						setTimeout(function () {
-							location.href = link.href;
-						}, 150);
-						event.preventDefault();
-					}
-				}
-			}
-		</script>
 	</body>
 </html>

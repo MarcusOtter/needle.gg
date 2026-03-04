@@ -1,0 +1,33 @@
+name: lint
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v6
+
+            - name: Setup node
+              uses: actions/setup-node@v6
+              with:
+                  node-version: "lts/*"
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Build
+              run: npm run build
+
+            - name: Formatting
+              run: npm run prettier
+
+            - name: Type checks
+              run: npm run astro check
