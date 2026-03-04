@@ -1,8 +1,8 @@
 {
+	"$schema": "node_modules/wrangler/config-schema.json",
 	"main": "dist/_worker.js/index.js",
 	"name": "needlegg",
-	"compatibility_date": "2025-09-27",
-	"compatibility_flags": ["global_fetch_strictly_public", "nodejs_compat"],
+	"compatibility_date": "2026-03-04",
 	"assets": {
 		"binding": "ASSETS",
 		"directory": "dist",
@@ -10,5 +10,4 @@
 	"observability": {
 		"enabled": true,
 	},
-	"$schema": "node_modules/wrangler/config-schema.json",
 }

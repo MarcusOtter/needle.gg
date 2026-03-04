@@ -12,11 +12,9 @@
 		"prettier": "prettier --check .",
 		"prettier:fix": "prettier --write .",
 		"lint": "eslint .",
-		"deploy": "npm run build && wrangler deploy",
-		"cf-typegen": "wrangler types"
+		"deploy": "npm run build && wrangler deploy"
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "^12.6.12",
 		"astro": "^5.18.0"
 	},
 	"devDependencies": {
